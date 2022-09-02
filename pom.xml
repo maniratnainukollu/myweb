@@ -9,8 +9,11 @@
 	<url>http://maven.apache.org</url>
 	
 	<properties>
-		<docker.image.prefix>kammana</docker.image.prefix>
-		<sonar.host.url>http://43.205.215.182:9000/</sonar.host.url>
+		
+    		 <maven.compiler.source>1.8</maven.compiler.source>
+     		 <maven.compiler.target>1.8</maven.compiler.target>
+		 <docker.image.prefix>kammana</docker.image.prefix>
+		 <sonar.host.url>http://43.205.215.182:9000/</sonar.host.url>
 
 	</properties>
 	<dependencies>
