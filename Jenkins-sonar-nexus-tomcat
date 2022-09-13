@@ -16,8 +16,9 @@ pipeline{
             }
         }
         stage('SonarQube analysis') {
-        def mvnHome = tool name:'maven3',type:'maven'
+       
             steps{
+                     def mvnHome = tool name:'maven3',type:'maven'
                     withSonarQubeEnv('sonar-6') { 
         // If you have configured more than one global server connection, you can specify its name
 //                  sh "${mvnHome}/mvn sonar:sonar "
