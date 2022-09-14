@@ -11,7 +11,7 @@ pipeline{
         }
         stage("Maven Build"){
             steps{
-                sh "mvn clean sonar:sonar -Dsonar.projectKey=sonar-key3  -Dsonar.host.url=http://5.206.122.86:9000 -Dsonar.login=c18ad2b9677ddbb6443ab3e56cf1c33475c093aa -Dsonar.projectName=firstproject install"
+                sh "mvn clean sonar:sonar -Dsonar.projectKey=sonar-key3  -Dsonar.host.url=http://15.206.122.86:9000 -Dsonar.login=c18ad2b9677ddbb6443ab3e56cf1c33475c093aa -Dsonar.projectName=firstproject install"
                 
             }
         }
